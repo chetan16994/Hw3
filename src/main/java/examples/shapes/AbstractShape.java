@@ -5,9 +5,9 @@ import java.util.stream.Stream;
 public abstract class AbstractShape implements Shape{
     protected SaveDetails saveDetails;
 
-    /*public SaveDetails getSaveDetails() {
-        return saveDetails;
-    }*/
+//    public SaveDetails getSaveDetails() {
+//        return saveDetails;
+//    }
 
     public void setSaveDetails(SaveDetails saveDetails) {
         this.saveDetails = saveDetails;

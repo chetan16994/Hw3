@@ -6,14 +6,13 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-public class Runner {
-   {
+public class IOClass {
+    public static void main(String args[]) {
         ArrayList shapes = new ArrayList<>();
 
         try {
             Circle circle = new Circle(new Point(1.1, 1), 5);
             shapes.add(circle);
-
 
             Triangle triangle = new Triangle(new Point(1, 1), new Point(1, 2), new Point(0, 1));
             shapes.add(triangle);

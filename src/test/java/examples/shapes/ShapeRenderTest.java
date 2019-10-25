@@ -44,13 +44,13 @@ public class ShapeRenderTest {
         BufferedImage bImg = new BufferedImage(600, 600, BufferedImage.TYPE_INT_RGB);
         Graphics2D g2D = bImg.createGraphics();
 
-//        EmbeddedPicture ePicture = new EmbeddedPicture("Output/usu.jpg");
-//        SaveDetails sd5 = new SaveDetails();
-//        sd5.setxAxis(0);
-//        sd5.setyAxis(100);
-//        ePicture.setSaveDetails(sd5);
-//        ePicture.load(g2D);
-//        composite.add(ePicture);
+        EmbeddedPicture ePicture = new EmbeddedPicture("Output/usu.jpg");
+        SaveDetails sd5 = new SaveDetails();
+        sd5.setxAxis(0);
+        sd5.setyAxis(100);
+        ePicture.setSaveDetails(sd5);
+        ePicture.load(g2D);
+        composite.add(ePicture);
 
         composite.setSaveDetails(sd1);
         composite.load(g2D);

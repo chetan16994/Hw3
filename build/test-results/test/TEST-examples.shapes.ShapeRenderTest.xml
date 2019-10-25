@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.shapes.ShapeRenderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T21:02:58" hostname="LAPTOP-PQL7F6G3" time="0.078">
+<testsuite name="examples.shapes.ShapeRenderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-25T04:44:40" hostname="LAPTOP-PQL7F6G3" time="0.268">
   <properties/>
-  <testcase name="testRender" classname="examples.shapes.ShapeRenderTest" time="0.078"/>
+  <testcase name="testRender" classname="examples.shapes.ShapeRenderTest" time="0.268"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

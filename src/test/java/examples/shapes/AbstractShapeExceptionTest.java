@@ -2,6 +2,8 @@ package examples.shapes;
 
 import org.junit.Test;
 
+import java.util.stream.Stream;
+
 import static org.junit.Assert.*;
 
 public class AbstractShapeExceptionTest {
