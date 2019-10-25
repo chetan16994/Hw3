@@ -2,8 +2,7 @@ package examples.shapes;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class ValidatorTest {
 
@@ -37,7 +36,7 @@ public class ValidatorTest {
     }
 
     @Test
-    public void testValidatePositiveDouble()  throws ShapeException {
+    public void testValidatePositiveDouble()  throws ShapeException  {
         Validator.validatePositiveDouble(456, "Test message");
         Validator.validatePositiveDouble(0.34523, "Test message");
 

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ShapeExceptionTest {
+public class AbstractShapeExceptionTest {
 
     @Test
     public void testConstruction() {

@@ -2,6 +2,11 @@ package examples.shapes;
 
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class LineTest {
@@ -57,7 +62,6 @@ public class LineTest {
             // ignore
         }
     }
-
 
     @Test
     public void testMove() throws ShapeException {
@@ -138,5 +142,28 @@ public class LineTest {
         assertEquals(10, myLine.getPoint2().getY(), 0);
 
     }
+
+    @Test
+    public void load() throws Exception {
+
+        String outputFilename = "line.png";
+        BufferedImage bufferedImage = new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB);
+
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+
+            Point p1 = new Point(10, 40);
+            Point p2 = new Point(60, 90);
+            Point p3 = new Point(80, 0);
+            Point p4 = new Point(100, 10);
+
+            Line line1 = new Line(p1, p2);
+            Line line2 = new Line(p3, p4);
+            line1.load(graphics);
+            line2.load(graphics);
+        ImageIO.write(bufferedImage, "png", new File("Output/Line.png"));
+        graphics.dispose();
+    }
+
 
 }

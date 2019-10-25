@@ -2,6 +2,11 @@ package examples.shapes;
 
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class PointTest {
@@ -224,5 +229,23 @@ public class PointTest {
         assertNotSame(p1, p2);
         assertEquals(p1.getX(), p2.getX(), 0);
         assertEquals(p1.getY(), p2.getY(), 0);
+    }
+
+    @Test
+    public void load() throws Exception {
+
+        String outputFilename = "Output/point.png";
+
+        BufferedImage bufferedImage = new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB);
+
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+
+        Point p1 = new Point(40, 40);
+        p1.load(graphics);
+
+        File file = new File(outputFilename);
+        ImageIO.write(bufferedImage, "png", file);
+        graphics.dispose();
     }
 }
